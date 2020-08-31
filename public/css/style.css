@@ -1,0 +1,13 @@
+h1{
+   color: orange
+}
+body{
+   color: #000;
+   font-family:sans-serif;
+   max-width: 650px;
+   margin:0 auto;
+   padding: 0 16px;
+}
+button{
+   cursor:pointer
+}
