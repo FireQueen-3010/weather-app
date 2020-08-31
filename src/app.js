@@ -11,7 +11,7 @@ const forecast=require('./utils/forecast')
 const viewsPath=path.join(__dirname,'../templates/views')
 const partialsPath=path.join(__dirname,'../templates/partials')
 const directoryName=path.join(__dirname,'../public')
-
+const port=process.env.PORT||3000
 const app=express()
 
 app.set('view engine','hbs')
@@ -85,6 +85,6 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
-    console.log("hgvnbkmnk")
+app.listen(port,()=>{
+    console.log("Server is on port: "+port)
 })
